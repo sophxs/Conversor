@@ -67,7 +67,7 @@ span {
 input {
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   width: 100%;
 
    padding: 1rem;
 
@@ -93,14 +93,16 @@ input::-webkit-inner-spin-button {
    border-color: var(--quaternary);
 }
 
-#conversao {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 3rem;
-   width: 100%;
-}
-
 footer {
    font-size: 2rem;
+}
+
+@media screen and (max-width: 370px) {
+   h1 {
+      font-size: 5rem;
+   }
+
+   h2 {
+      font-size: 1.5rem;
+   }
 }
